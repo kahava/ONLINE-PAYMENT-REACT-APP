@@ -18,7 +18,8 @@ function App() {
     <div className="App">
      <Router>
         <Routes>
-          <Route index element={!isAuthenticated ? <Login/>: <JuicePage />} />
+          // <Route index element={!isAuthenticated ? <Login/>: <JuicePage />} />
+          <Route index element={<JuicePage />} />
           <Route exact path="/qrcode/avocado" element={<QrCado />} />
           <Route exact path="/qrcode/mango" element={<QrMango />} />
           <Route exact path="/qrcode/passion" element={<QrPassion />} />
